@@ -71,51 +71,53 @@ class PictureStoryTime extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10.0),
-              Column(children: <Widget>[
-                const Text(
-                  'Lal da naki Kala da?',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 22.0,
+              Column(
+                children: <Widget>[
+                  const Text(
+                    'Lal da naki Kala da?',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 22.0,
+                    ),
                   ),
-                ),
-                const SizedBox(height: 10.0),
-                const Row(
-                  children: <Widget>[
-                    Center(
-                      child: CircleAvatar(
-                        radius: 40,
-                        backgroundImage: AssetImage('assets/red_bike.jpg'),
+                  const SizedBox(height: 10.0),
+                  const Row(
+                    children: <Widget>[
+                      Center(
+                        child: CircleAvatar(
+                          radius: 40,
+                          backgroundImage: AssetImage('assets/red_bike.jpg'),
+                        ),
                       ),
-                    ),
-                    SizedBox(width: 10.0),
-                    Center(
-                      child: CircleAvatar(
-                        radius: 40,
-                        backgroundImage: AssetImage('assets/black_bike.jpg'),
+                      SizedBox(width: 10.0),
+                      Center(
+                        child: CircleAvatar(
+                          radius: 40,
+                          backgroundImage: AssetImage('assets/black_bike.jpg'),
+                        ),
                       ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 10.0),
-                RadioListTile<int>(
-                  title: const Text('Lal'),
-                  value: 1,
-                  groupValue: null, // Provide the selected value here
-                  onChanged: (int? value) {
-                    // Handle the radio button selection here
-                  },
-                ),
-                RadioListTile<int>(
-                  title: const Text('Kala'),
-                  value: 2,
-                  groupValue: null, // Provide the selected value here
-                  onChanged: (int? value) {
-                    // Handle the radio button selection here
-                  },
-                ),
-              ]),
+                    ],
+                  ),
+                  const SizedBox(height: 10.0),
+                  RadioListTile<int>(
+                    title: const Text('Lal'),
+                    value: 1,
+                    groupValue: null, // Provide the selected value here
+                    onChanged: (int? value) {
+                      // Handle the radio button selection here
+                    },
+                  ),
+                  RadioListTile<int>(
+                    title: const Text('Kala'),
+                    value: 2,
+                    groupValue: null, // Provide the selected value here
+                    onChanged: (int? value) {
+                      // Handle the radio button selection here
+                    },
+                  ),
+                ],
+              ),
               const SizedBox(height: 20.0),
               Column(
                 children: <Widget>[
