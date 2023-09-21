@@ -115,7 +115,41 @@ class PictureStoryTime extends StatelessWidget {
                     // Handle the radio button selection here
                   },
                 ),
-              ])
+              ]),
+              const SizedBox(height: 20.0),
+              Column(
+                children: <Widget>[
+                  const Text(
+                    'Post your story here',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 22.0,
+                    ),
+                  ),
+                  const SizedBox(height: 10.0),
+                  Row(
+                    children: <Widget>[
+                      const Expanded(
+                        child: SizedBox(
+                          height: 50.0, // Adjust the height as needed
+                          child: TextField(
+                            decoration: InputDecoration(
+                              hintText: 'Your story...',
+                            ),
+                          ),
+                        ),
+                      ),
+                      ElevatedButton(
+                        onPressed: () {
+                          // Handle the confirmation logic here
+                        },
+                        child: const Text('Confirm'),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ],
           ),
         ),
